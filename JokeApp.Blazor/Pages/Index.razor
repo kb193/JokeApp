@@ -1,0 +1,45 @@
+﻿@page "/"
+
+<PageTitle>Joke App</PageTitle>
+
+<div class="container flex-column">
+    <div class="row align-items-center">
+        <div class="setup shadow my-5">
+            <div class="joke">@(Joke.type == "single" ? Joke.joke : Joke.setup)</div>
+        </div>
+    </div>
+    @if (Joke.type == "twopart")
+    {
+        <div class="row">
+            <div class="setup shadow my-5">
+                <div class="joke">@Joke.delivery</div>
+            </div>
+        </div>
+    }
+
+    <div class="row justify-content-center">
+        <button class="my-button my-button-generate mt-5"
+                role="button"
+                @onclick="@GenerateJoke">
+            Generate A Joke
+        </button>
+    </div>
+    <div class="row justify-content-center">
+        @if (_saved)
+        {
+            <button class="my-button my-button-saved mt-5"
+                role="button"
+                @onclick="@SaveJoke">
+                Saved!
+            </button>
+        }
+        else
+        {
+            <button class="my-button my-button-save mt-5"
+                role="button"
+                @onclick="@SaveJoke">
+                Save Joke
+            </button>
+        }
+    </div>
+</div>

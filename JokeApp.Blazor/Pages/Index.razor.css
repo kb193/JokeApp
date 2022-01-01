@@ -1,0 +1,63 @@
+﻿
+/* CSS */
+.my-button {
+    align-items: center;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    /* max-width: 100%; */
+    width: 340px;
+    padding: 19px 24px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.my-button-generate {
+    background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+}
+
+.my-button-save {
+    background: rgb(164, 255, 0);
+    background: linear-gradient( 90deg, rgba(164, 255, 0, 1) 9%, rgba(222, 0, 255, 1) 100% );
+}
+
+.my-button-saved {
+    background: rgb(0,255,55);
+    background: linear-gradient(90deg, rgba(0,255,55,1) 4%, rgba(151,255,0,1) 100%, rgba(222,0,255,1) 100%);
+}
+
+.my-button :active,
+.my-button :hover {
+    outline: 0;
+}
+
+@media (min-width: 768px) {
+    .my-button {
+        font-size: 24px;
+        min-width: 196px;
+    }
+}
+
+.setup {
+    height: 150px;
+    background-color: ghostwhite;
+    border-radius: 8px;
+    font-size: 26px;
+    overflow: auto;
+}
+
+.joke {
+    margin: 10px;
+    text-align: center;
+}

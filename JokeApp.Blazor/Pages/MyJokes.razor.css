@@ -1,0 +1,28 @@
+﻿.active {
+    background: blue;
+    color: azure;
+}
+
+.table {
+    user-select: none;
+}
+
+.icon-cell {
+    width: 50px;
+    max-width: 50px;
+}
+
+.trash {
+    display: none;
+}
+
+
+.active .trash {
+    display: block;
+    color: red;
+    font-size: 16px;
+}
+
+i {
+    cursor: pointer;
+}
